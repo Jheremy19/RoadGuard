@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, viewport-fit=cover">
+    <title>RoadGuard - Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-container">
+        <div class="page-header">
+            <button class="back-btn-nav" id="backBtn"><i class="fas fa-arrow-left"></i> Back</button>
+            <h2>Profile</h2>
+            <button class="settings-gear-btn" id="settingsBtn"><i class="fas fa-cog"></i></button>
+        </div>
+        
+        <div class="page-content">
+            <div class="profile-card">
+                <div class="profile-avatar">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <div class="profile-info">
+                    <h3 id="profileFullname">Loading...</h3>
+                    <p id="profileUsername">@username</p>
+                    <p id="profileEmail">email@example.com</p>
+                </div>
+            </div>
+            
+            <div class="profile-stats">
+                <div class="stat-item">
+                    <span class="stat-number" id="totalReportsCount">0</span>
+                    <span class="stat-label">Reports Submitted</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="activeReportsCount">0</span>
+                    <span class="stat-label">Active Reports</span>
+                </div>
+            </div>
+            
+            <button id="logoutBtn" class="logout-profile-btn"><i class="fas fa-sign-out-alt"></i> Logout</button>
+            <button id="toggleRoleBtn" class="toggle-role-btn"><i class="fas fa-exchange-alt"></i> Switch to Admin</button>
+        </div>
+    </div>
+
+    <script src="profile.js"></script>
+</body>
+</html>
