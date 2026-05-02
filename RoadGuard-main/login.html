@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, viewport-fit=cover">
+    <title>RoadGuard - Login/Signup</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-logo">
+            <i class="fas fa-road"></i>
+            <h1>RoadGuard</h1>
+            <p>Report road hazards, make a difference</p>
+        </div>
+        
+        <div class="auth-tabs">
+            <button class="auth-tab-btn active" id="loginTabBtn">Login</button>
+            <button class="auth-tab-btn" id="signupTabBtn">Sign Up</button>
+        </div>
+        
+        <!-- LOGIN FORM -->
+        <div id="loginForm" class="auth-form active">
+            <div class="form-group">
+                <label><i class="fas fa-user"></i> Username</label>
+                <input type="text" id="loginUsername" placeholder="Enter your username">
+            </div>
+            <div class="form-group">
+                <label><i class="fas fa-lock"></i> Password</label>
+                <input type="password" id="loginPassword" placeholder="Enter your password">
+            </div>
+            <button id="signinBtn" class="auth-primary-btn">Sign In</button>
+            
+            <div class="social-login">
+                <p>Or continue with</p>
+                <div class="social-icons">
+                    <button class="social-btn google"><i class="fab fa-google"></i> Google</button>
+                    <button class="social-btn apple"><i class="fab fa-apple"></i> Apple</button>
+                    <button class="social-btn facebook"><i class="fab fa-facebook-f"></i> Facebook</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- SIGNUP FORM - Step 1 -->
+        <div id="signupForm" class="auth-form">
+            <div class="form-group">
+                <label><i class="fas fa-user"></i> Full Name</label>
+                <input type="text" id="signupFullname" placeholder="Enter your full name">
+            </div>
+            <div class="form-group">
+                <label><i class="fas fa-envelope"></i> Email</label>
+                <input type="email" id="signupEmail" placeholder="Enter your email">
+            </div>
+            <button id="signupNextBtn" class="auth-primary-btn">Next →</button>
+        </div>
+        
+        <!-- SIGNUP FORM - Step 2 -->
+        <div id="signupPasswordForm" class="auth-form" style="display: none;">
+            <div class="form-group">
+                <label><i class="fas fa-lock"></i> Password</label>
+                <input type="password" id="signupPassword" placeholder="Create a password">
+            </div>
+            <div class="form-group">
+                <label><i class="fas fa-check-circle"></i> Confirm Password</label>
+                <input type="password" id="signupConfirmPassword" placeholder="Confirm your password">
+            </div>
+            <button id="signupCompleteBtn" class="auth-primary-btn">Create Account →</button>
+            <button id="signupBackBtn" class="auth-secondary-btn">← Back</button>
+        </div>
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+</html>
